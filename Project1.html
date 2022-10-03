@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width, initial-scale=1.0">
+        <meta name="discription" content="Survey form">
+        <link rel="stylesheet" href="style.css">
+        <title>Survey Form</title>
+    </head>
+    <body background="">
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">A little form</p>
+        </header>
+        <form id="survey-form">
+         <div class="main">
+             <div class="form">
+                <label for="name-label">Name</label>
+                <input type="text" id="name-label" name="name" placeholder="enter your name">
+             </div>
+             <div class="form">
+                <label for="email-label">Email</label>
+                <input id="email-label" name="email" placeholder="enter your email">
+             </div>
+             <div class="form">
+                <label for="number-label">Number</label>
+                <input type="number" id="number-label" name="number" min="10" max="20" placeholder="you age">
+             </div>
+             <div class="form">
+                <p class="label-pos">Are u human?</p>
+                <select class="Areuhuman" id="dropdown">
+                   <option>Select</option>
+                   <option>Yes</option>
+                   <option>Maybe Yes</option>
+                </select>
+             </div>
+             <div class="form">
+                <p class="label-pos">Where are you from?</p>
+                <label>
+            <input class="inline" type="radio" name="City" value="Stromwind City" checked>Stromwind City
+        </label>
+        <label>
+            <input class="inline" type="radio" name="City" value="Orgrimmar City" checked>Orgrimmar City
+        </label>
+             </div>
+             <div class="form">
+                <p class="label-pos">Your street?</p>
+            <label>
+              <input class="input-checkbox" type="checkbox" value="street">Loki Aveny
+            </label>
+            <label>
+              <input class="input-checkbox" type="checkbox" value="street">Florid State
+            </label>
+            <label>
+               <input class="input-checkbox" type="checkbox" value="street">Stip Garten
+             </label>
+              <label>
+               <input class="input-checkbox" type="checkbox" value="street">Lovi Klie
+            </label>
+             </div>
+             <div class="form">
+              <p class="label-pos">Let tell about self?</p>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+             </div>
+             <div class="form">
+            <button id="submit">Submit</button>
+             </div>
+         </div>
+        </form>
+    </body>
+</html>
