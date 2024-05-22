@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Survey form" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Survey Form</title>
+ </head>
+ <body>
+  <header>
+   <h1 id="title">Survey Form</h1>
+   <p id="description">Hello friend</p>
+  </header>
+  <main>
+   <form id="survey-form">
+    <fieldset>
+     <legend>Персональная информация</legend>
+     <div class="form-group">
+      <label for="name">Имя</label>
+      <input
+       class="input-width"
+       type="text"
+       id="name"
+       name="name"
+       placeholder="Ваше имя"
+       required
+      />
+     </div>
+     <div class="form-group">
+      <label for="email">Емеил</label>
+      <input
+       class="input-width"
+       type="email"
+       id="email"
+       name="email"
+       placeholder="Ваша почта"
+       required
+      />
+     </div>
+     <div class="form-group">
+      <label for="number">Возраст</label>
+      <input
+       class="input-width"
+       type="number"
+       id="number"
+       name="number"
+       min="10"
+       max="20"
+       placeholder="Ваш возраст"
+       required
+      />
+     </div>
+    </fieldset>
+    <fieldset>
+     <legend>Вопросы</legend>
+     <div class="form-group">
+      <label for="dropdown">На какую должность претендуете?</label>
+      <select id="dropdown" name="human" class="input-width" required>
+       <option value="">-- Выбрать --</option>
+       <option value="frontend">Frontend-developer</option>
+       <option value="fackend">Backend-developer</option>
+      </select>
+     </div>
+     <div class="form-group">
+      <p>В какой стране проживаете?</p>
+      <label>
+       <input type="radio" name="city" value="russian" checked />
+       Россия
+      </label>
+      <label> <input type="radio" name="city" value="china" /> Китай </label>
+     </div>
+     <div class="form-group">
+      <p>Ваши навыки?</p>
+      <label>
+       <input type="checkbox" name="street" value="React" /> React
+      </label>
+      <label> <input type="checkbox" name="street" value="Git" /> Git </label>
+      <label>
+       <input type="checkbox" name="street" value="JavaScript" /> JavaScript
+      </label>
+      <label>
+       <input type="checkbox" name="street" value="Angular" /> Angular
+      </label>
+     </div>
+     <div class="form-group">
+      <label for="about">Расскажите о себе:</label>
+      <textarea
+       class="input-width"
+       id="about"
+       name="about"
+       rows="5"
+       placeholder="Введите текст"
+       required
+      ></textarea>
+     </div>
+    </fieldset>
+    <div class="form-group">
+     <button type="submit" id="submit">Submit</button>
+    </div>
+   </form>
+  </main>
+ </body>
+</html>
